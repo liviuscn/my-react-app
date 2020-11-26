@@ -148,7 +148,12 @@ function Topic() {
   let match = useRouteMatch();
   console.log(match)
   let { topicId } = useParams();
-  return <h3>Requested topic ID: {topicId}</h3>;
+  return <div>
+    <h3>Requested topic ID: {topicId}</h3>
+    <li>
+      <Link to="/about">go to About</Link>
+    </li>
+  </div>;
 }
 
 export default App;
